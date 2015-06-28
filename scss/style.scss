@@ -6,7 +6,6 @@ $font-sans: 'Open Sans', sans-serif;
 
 nav {
   background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0));
-  height: 3.6rem;
   position: fixed;
   width: 100%;
   h1 {
@@ -15,10 +14,10 @@ nav {
     color: rgba(255, 255, 255, 0.8);
     line-height: 3.6;
   }
-  ul { 
+  ul {
     float: right;
-    margin-right: 8rem;
-    li {      
+    margin-right: 3rem;
+    li {
       display: inline;
       a {
         padding: 1rem;
@@ -33,12 +32,12 @@ nav {
 
 .logo {
   float: left;
-  margin-left: 8rem;
+  margin-left: 3rem;
   i {
     color: rgba(255, 255, 255, 0.8);
     line-height: .2rem;
     padding-right: .5rem;
-  }  
+  }
 }
 
 header {
@@ -49,12 +48,12 @@ header {
   background-size: cover;
   padding-top: 0;
   height: 100vh;
-  
+
   .line {
     border-bottom: 5px solid rgba(255, 255, 255, 0.3);
     width: 900px;
     text-align: center;
-    margin: 0px auto; 
+    margin: 0px auto;
   }
   h2 {
     text-align: center;
@@ -62,8 +61,8 @@ header {
     font-family: $font-sans;
     font-weight: 600;
     font-size: 3.4rem;
-    margin-top: 0 auto;
-    margin-bottom: 0;
+    margin: 0 auto;
+    padding: 0;
   }
   p {
     line-height: 1.8;
@@ -94,7 +93,7 @@ section#intro {
   padding-bottom: 6rem;
   width: 100%;
   background: #5EDDB6;
-  
+
   h2 {
   font-family: $font-title;
   font-size: 2rem;
@@ -118,7 +117,7 @@ section#intro {
     border-radius: 100%;
     text-align: center;
     margin: 0 auto;
-  } 
+  }
   i {
     color: #ceffef;
     position: relative;

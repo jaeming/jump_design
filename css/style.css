@@ -1,25 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+/* line 7, ../scss/style.scss */
 nav {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
-  height: 3.6rem;
   position: fixed;
   width: 100%;
 }
+/* line 11, ../scss/style.scss */
 nav h1 {
   float: left;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 3.6;
 }
+/* line 17, ../scss/style.scss */
 nav ul {
   float: right;
-  margin-right: 8rem;
+  margin-right: 3rem;
 }
+/* line 20, ../scss/style.scss */
 nav ul li {
   display: inline;
 }
+/* line 22, ../scss/style.scss */
 nav ul li a {
   padding: 1rem;
   font: "Roboto", sans-serif;
@@ -28,16 +32,19 @@ nav ul li a {
   line-height: 3.6;
 }
 
+/* line 33, ../scss/style.scss */
 .logo {
   float: left;
-  margin-left: 8rem;
+  margin-left: 3rem;
 }
+/* line 36, ../scss/style.scss */
 .logo i {
   color: rgba(255, 255, 255, 0.8);
   line-height: .2rem;
   padding-right: .5rem;
 }
 
+/* line 43, ../scss/style.scss */
 header {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://download.unsplash.com/photo-1428954376791-d9ae785dfb2d");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://download.unsplash.com/photo-1428954376791-d9ae785dfb2d");
@@ -48,21 +55,24 @@ header {
   padding-top: 0;
   height: 100vh;
 }
+/* line 52, ../scss/style.scss */
 header .line {
   border-bottom: 5px solid rgba(255, 255, 255, 0.3);
   width: 900px;
   text-align: center;
   margin: 0px auto;
 }
+/* line 58, ../scss/style.scss */
 header h2 {
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 3.4rem;
-  margin-top: 0 auto;
-  margin-bottom: 0;
+  margin: 0 auto;
+  padding: 0;
 }
+/* line 67, ../scss/style.scss */
 header p {
   line-height: 1.8;
   margin: 0 auto;
@@ -73,6 +83,7 @@ header p {
   font-family: "Open Sans", sans-serif;
 }
 
+/* line 78, ../scss/style.scss */
 .header-text {
   position: relative;
   top: 50%;
@@ -81,11 +92,13 @@ header p {
           transform: translateY(-50%);
 }
 
+/* line 84, ../scss/style.scss */
 .content {
   max-width: 1000px;
   margin: 0 auto;
 }
 
+/* line 89, ../scss/style.scss */
 section#intro {
   text-align: center;
   margin: 0 auto;
@@ -94,12 +107,14 @@ section#intro {
   width: 100%;
   background: #5EDDB6;
 }
+/* line 97, ../scss/style.scss */
 section#intro h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #f2fffa;
   padding-bottom: 1rem;
 }
+/* line 103, ../scss/style.scss */
 section#intro p {
   margin: 0 auto;
   max-width: 45rem;
@@ -109,6 +124,7 @@ section#intro p {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+/* line 112, ../scss/style.scss */
 section#intro span {
   display: block;
   width: 5rem;
@@ -118,6 +134,7 @@ section#intro span {
   text-align: center;
   margin: 0 auto;
 }
+/* line 121, ../scss/style.scss */
 section#intro i {
   color: #ceffef;
   position: relative;
@@ -129,12 +146,14 @@ section#intro i {
   padding-top: .2rem;
 }
 
+/* line 131, ../scss/style.scss */
 .intro-icons {
   margin-top: 5rem;
   margin-bottom: 5rem;
   max-width: 50rem;
 }
 
+/* line 137, ../scss/style.scss */
 hr {
   border: 0;
   height: .1rem;
