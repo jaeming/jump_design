@@ -30,7 +30,7 @@ gulp.task('slim', function(){
 gulp.task('compress', function() {
   gulp.src('source/js/*.js')
   .pipe(uglify())
-  .pipe(gulp.dest('html/js/min'))
+  .pipe(gulp.dest('html/js/'))
 });
 
 // Minifiy images
