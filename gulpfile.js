@@ -71,7 +71,7 @@ gulp.task('scss', function () {
 gulp.task('watch', function () {
   gulp.watch('source/scss/**/*.scss', ['scss']);
   gulp.watch('source/*.slim', ['slim']);
-  gulp.watch(['html/index.html', 'html/js/**/*', 'html/images/*']);
+  gulp.watch(['html/index.html', 'html/js/**/*', 'source/images/*']);
 });
 
 gulp.task('default', ['slim', 'images', 'watch', 'compress', 'serve']);

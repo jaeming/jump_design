@@ -4,6 +4,24 @@
 $font-title: 'Roboto', sans-serif;
 $font-sans: 'Open Sans', sans-serif;
 
+/* UI */
+
+button {
+  background-color: #5EDDB6;
+  border-color: #5AB89B;
+  &:hover {
+    background-color: #5AB89B;
+  }
+}
+
+hr {
+  border: 0;
+  height: .1rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* MENU */
+
 nav {
   background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0));
   position: fixed;
@@ -39,6 +57,9 @@ nav {
     padding-right: .5rem;
   }
 }
+
+
+/* HERO */
 
 header {
   background-image: linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/header-bg.jpeg");
@@ -81,16 +102,23 @@ header {
   transform: translateY(-50%);
 }
 
+/* SECTIONS */
+
 .content {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-section#intro {
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* intro */
+
+#intro {
   text-align: center;
   margin: 0 auto;
-  padding-top: 7rem;
-  padding-bottom: 6rem;
   width: 100%;
   background: #5EDDB6;
 
@@ -129,13 +157,26 @@ section#intro {
 }
 
 .intro-icons {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3.8rem;
+  margin-bottom: 6rem;
   max-width: 50rem;
 }
 
-hr {
-  border: 0;
-  height: .1rem;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+/* services */
+
+#services {
+  h2 {
+    margin-top: 2rem;
+    color: #575757;
+    font-family: $font-title;
+  }
+  p {
+    font-family: $font-title;
+    color: #575757;
+  }
+}
+
+.ipad {
+  width: 23rem;
+  margin-top: -12.6rem;
 }
