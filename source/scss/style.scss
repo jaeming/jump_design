@@ -66,9 +66,9 @@ nav {
 header {
   background-image: linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/header-bg.jpeg");
   background-attachment: fixed;
-  background-position: center center;
+  /* background-position: center center; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
   padding-top: 0;
   height: 100vh;
 
@@ -170,7 +170,6 @@ section {
 #services {
   box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.54);
   h2 {
-    margin-top: 2rem;
     color: #575757;
     font-family: $font-title;
   }
