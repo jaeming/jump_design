@@ -8,23 +8,23 @@ html
     link href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css" rel=("stylesheet prefetch") /
     link href="css/style.css" rel="stylesheet" /
     script src="./js/modernizr.js" type="text/javascript" 
-    script src="./js/jquery-1.11.3.min.js" 
+    script src="./js/jquery-1.11.3.min.js"   
   body
-    nav role="navigation" data-0=("opacity: 1;") data-50=("opacity: 0;")
+    nav.transparent data-20="background: rgba(255, 255, 255, 0);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.0);" data-150="background: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.24);" role="navigation" 
       span.logo
-        h1
-          i.fa.fa-star.fa-lg
-          strong WEB
+        h1 data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);"
+          i.fa.fa-star.fa-lg data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);"
+          strong  WEB
           | KEA
       ul
         li
-          a href="#"  HOME
+          a href="#" data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);" HOME
         li
-          a href="#"  ABOUT
+          a href="#" data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);" ABOUT
         li
-          a href="#"  WORK
+          a href="#" data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);" WORK
         li
-          a href="#"  CONTACT
+          a href="#" data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);" CONTACT
     header
       .header-text
         h2 BRILLANT THINGS FOR EVERY ONE
@@ -61,6 +61,6 @@ html
             | &nbsp;            
           .columns.medium-5
             img.ipad src="./images/ipad-shadow.png"/
-    script src="js/skrollr.min.js" type="text/javascript" 
+    script type="text/javascript" src="js/skrollr.min.js" 
     javascript:
       var s = skrollr.init();
