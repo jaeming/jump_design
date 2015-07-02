@@ -7,10 +7,12 @@ html
     link href="css/reset.css" rel="stylesheet" /
     link href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css" rel=("stylesheet prefetch") /
     link href="css/style.css" rel="stylesheet" /
+    link href="css/animate.css" rel="stylesheet" /
     script src="./js/modernizr.js" type="text/javascript" 
-    script src="./js/jquery-1.11.3.min.js"   
+    script src="./js/jquery-1.11.3.min.js"
+    script src="./js/wow.min.js"     
   body
-    nav.transparent data-20="background: rgba(255, 255, 255, 0);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.0);" data-150="background: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.24);" role="navigation" 
+    nav.wow.fadeInDown.transparent data-20="background: rgba(255, 255, 255, 0);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.0);" data-150="background: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.24);" role="navigation" 
       span.logo
         h1 data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);"
           i.fa.fa-star.fa-lg data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);"
@@ -26,26 +28,26 @@ html
         li
           a href="#" data-20="color: rgba(255, 255, 255, 0.8);" data-150="color: rgba(62, 144, 159, 1);" CONTACT
     header data-0="background-position: 0px -100px;" data-700="background-position: 0px 0px;"
-      .header-text
+      .header-text.wow.fadeInUp data-wow-delay="1s"
         h2 BRILLANT THINGS FOR EVERY ONE
         .line
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae accusamus, iure perspiciatis. Esse aut nesciunt veritatis, libero iure quos ut labore.
     section#intro
       .content
-        h2 Morbi ac nibh in justo rutrum consectetur
-        hr/
-        p
+        h2.wow.fadeIn Morbi ac nibh in justo rutrum consectetur
+        hr.wow.fadeInLeft data-wow-delay=".3s" /
+        p.wow.zoomIn data-wow-delay=".6s"
           | Pellentesque id velit a risus rhoncus pharetra sit amet vel eros. Cras ultricies aliquet nunc, vel hendrerit enim. Vestibulum eu eros eget felis fermentum pretium eget luctus magna.
         .row.intro-icons
-          .columns.medium-4
+          .columns.medium-4.wow.zoomIn
             span
               i.fa.fa-diamond.fa-lg.text-center
             p DESIGN
-          .columns.medium-4
+          .columns.medium-4.wow.zoomIn data-wow-delay=".3s"
             span
               i.fa.fa-cogs.fa-lg.text-center
             p DEVELOP
-          .columns.medium-4
+          .columns.medium-4.wow.zoomIn data-wow-delay=".6s"
             span
               i.fa.fa-cloud.fa-lg.text-center
             p DEPLOY
@@ -56,10 +58,12 @@ html
             h2 Duis aute irure dolor in reprehenderit.
             p 
               | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            button.radius Learn More
+            button.radius.button Learn More
             | &nbsp;            
           .columns.medium-6
-            img.ipad.show-for-medium-up src="./images/ipad-shadow.png"/
+            img.wow.fadeInUp.ipad.show-for-medium-up src="./images/ipad-shadow.png" data-wow-offset="200" /    
     script type="text/javascript" src="js/skrollr.min.js" 
     javascript:
       var s = skrollr.init();
+    javascript:
+      new WOW().init();  

@@ -7,11 +7,13 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css" rel="stylesheet prefetch" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
     <script src="./js/modernizr.js" type="text/javascript"></script>
     <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/wow.min.js"></script>
   </head>
   <body>
-    <nav class="transparent" data-150="background: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.24);" data-20="background: rgba(255, 255, 255, 0);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.0);" role="navigation">
+    <nav class="wow fadeInDown transparent" data-150="background: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.24);" data-20="background: rgba(255, 255, 255, 0);  box-shadow: 1px 1px 10px rgba(44, 55, 62, 0.0);" role="navigation">
       <span class="logo">
         <h1 data-150="color: rgba(62, 144, 159, 1);" data-20="color: rgba(255, 255, 255, 0.8);">
           <i class="fa fa-star fa-lg" data-150="color: rgba(62, 144, 159, 1);" data-20="color: rgba(255, 255, 255, 0.8);"></i><strong> WEB</strong>KEA
@@ -33,7 +35,7 @@
       </ul>
     </nav>
     <header data-0="background-position: 0px -100px;" data-700="background-position: 0px 0px;">
-      <div class="header-text">
+      <div class="header-text wow fadeInUp" data-wow-delay="1s">
         <h2>
           BRILLANT THINGS FOR EVERY ONE
         </h2>
@@ -45,27 +47,27 @@
     </header>
     <section id="intro">
       <div class="content">
-        <h2>
+        <h2 class="wow fadeIn">
           Morbi ac nibh in justo rutrum consectetur
         </h2>
-        <hr />
-        <p>
+        <hr class="wow fadeInLeft" data-wow-delay=".3s" />
+        <p class="wow zoomIn" data-wow-delay=".6s">
           Pellentesque id velit a risus rhoncus pharetra sit amet vel eros. Cras ultricies aliquet nunc, vel hendrerit enim. Vestibulum eu eros eget felis fermentum pretium eget luctus magna.
         </p>
         <div class="row intro-icons">
-          <div class="columns medium-4">
+          <div class="columns medium-4 wow zoomIn">
             <span><i class="fa fa-diamond fa-lg text-center"></i></span>
             <p>
               DESIGN
             </p>
           </div>
-          <div class="columns medium-4">
+          <div class="columns medium-4 wow zoomIn" data-wow-delay=".3s">
             <span><i class="fa fa-cogs fa-lg text-center"></i></span>
             <p>
               DEVELOP
             </p>
           </div>
-          <div class="columns medium-4">
+          <div class="columns medium-4 wow zoomIn" data-wow-delay=".6s">
             <span><i class="fa fa-cloud fa-lg text-center"></i></span>
             <p>
               DEPLOY
@@ -84,10 +86,10 @@
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-            <button class="radius">Learn More</button>&nbsp;            
+            <button class="radius button">Learn More</button>&nbsp;            
           </div>
           <div class="columns medium-6">
-            <img class="ipad show-for-medium-up" src="./images/ipad-shadow.png" />
+            <img class="wow fadeInUp ipad show-for-medium-up" data-wow-offset="200" src="./images/ipad-shadow.png" />
           </div>
         </div>
       </div>
@@ -95,6 +97,9 @@
     <script src="js/skrollr.min.js" type="text/javascript"></script>
     <script>
       var s = skrollr.init();
+    </script>
+    <script>
+      new WOW().init();  
     </script>
   </body>
 </html>

@@ -7,10 +7,10 @@ $font-sans: 'Open Sans', sans-serif;
 /* UI */
 
 button {
-  background-color: #5EDDB6;
-  border-color: #5AB89B;
+  background-color: #5EDDB6 !important;
+  border-color: #5AB89B !important;
   &:hover {
-    background-color: #5AB89B;
+    background-color: #5AB89B !important;
   }
 }
 
